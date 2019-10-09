@@ -1,0 +1,22 @@
+{
+  "name": "grape",
+  "version": "0.0.1",
+  "description": "Grape is a graph manipulator",
+  "main": "gulp scripts",
+  "directories": {
+    "test": "tests"
+  },
+  "dependencies": {
+    "gulp": "^4.0.2",
+    "gulp-concat": "^2.6.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "graph"
+  ],
+  "author": "Nazim Boudeffa",
+  "license": "MIT"
+}

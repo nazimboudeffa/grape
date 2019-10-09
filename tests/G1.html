@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+	<head>
+	<meta charset="utf-8">
+	<title>Render Graph 1</title>
+	</head>
+	<body>
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+		<script type="text/javascript" src="../build/grape.js"></script>
+		<script>
+			$(document).ready(function(){
+				var config = {};
+				config.graph = {
+				  "nodes": [
+				    {
+				      "id": "n0",
+				      "label": "A node",
+				      "x": 0,
+				      "y": 0,
+				      "size": 3
+				    },
+				    {
+				      "id": "n1",
+				      "label": "Another node",
+				      "x": 3,
+				      "y": 1,
+				      "size": 2
+				    },
+				    {
+				      "id": "n2",
+				      "label": "And a last one",
+				      "x": 1,
+				      "y": 3,
+				      "size": 1
+				    }
+				  ],
+				  "edges": [
+				    {
+				      "id": "e0",
+				      "source": "n0",
+				      "target": "n1"
+				    },
+				    {
+				      "id": "e1",
+				      "source": "n1",
+				      "target": "n2"
+				    },
+				    {
+				      "id": "e2",
+				      "source": "n2",
+				      "target": "n0"
+				    }
+				  ]
+	      };
+			  var app = new Grape.Graph(config);
+		    app.render(config);
+			});
+		</script>
+	</body>
+</html>

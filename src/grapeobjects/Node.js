@@ -1,0 +1,3 @@
+Grape.Node = function (node) {
+
+}
