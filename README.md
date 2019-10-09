@@ -1,4 +1,4 @@
-# Banana
+# Grape
 
 Grape is a graph manipulator, it uses the same way of defining graphs like [sigmajs](http://sigmajs.org/) but coded in way more fun
 
