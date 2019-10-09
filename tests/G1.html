@@ -52,8 +52,14 @@
 				    }
 				  ]
 	      };
-			  var app = new Grape.Graph(config);
-		    app.render(config);
+			  var graph = new Grape.Graph(config);
+		    graph.addNodes(config.graph.nodes);
+				graph.addEdges(config.graph.edges);
+				graph.showNodes();
+				graph.showEdges();
+				graph.hasSuccessor("n1");
+				console.log(graph.nextNode("n1"));
+				graph.render();
 			});
 		</script>
 	</body>
