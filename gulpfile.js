@@ -6,7 +6,8 @@ gulp.task('scripts', function() {
     'src/Grape.js',
     'src/core/Graph.js',
     'src/core/Node.js',
-    'src/core/Edge.js'
+    'src/core/Edge.js',
+    'src/core/Renderer.js'
     ])
     .pipe(concat('grape.js'))
     .pipe(gulp.dest('./build/'));

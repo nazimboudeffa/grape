@@ -74,7 +74,7 @@ Grape.Graph.prototype = {
       }
     }
     return nextNode;
-    
+
   },
 
   hasSuccessor: function(n){
@@ -88,6 +88,8 @@ Grape.Graph.prototype = {
   render: function(){
 
     this.showDebugHeader();
+    renderer = new Grape.Renderer(this.graph);
+    renderer.render();
 
   },
 
